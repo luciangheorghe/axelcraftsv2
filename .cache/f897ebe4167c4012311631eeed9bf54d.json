@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"module.exports = {\n  \"add\": function(a, b) {\n    return a + b\n  },\n  \"sub\": function(a, b) {\n    return a - b\n  }\n}\n"},"hash":"4aca9e0e9d4eac19e409677b83872ad3"}
