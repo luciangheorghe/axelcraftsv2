@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,600i,700,800|Exo:300,400,500,600,700,700i,800");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -45,7 +46,53 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.container {
+  width: 70%;
+  height: 50px;
+  background: yellow;
+  margin: 0 auto; }
+  .container .nav-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    .container .nav-wrapper .brand-logo {
+      text-transform: uppercase;
+      font-size: 25px;
+      padding: 0 0 0 15px;
+      color: #757780; }
+    .container .nav-wrapper #nav-mobile {
+      display: flex;
+      flex-direction: row; }
+      .container .nav-wrapper #nav-mobile li a {
+        color: #757780;
+        padding: 0 15px;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 1px;
+        transition: all .6s ease-in-out; }
+        .container .nav-wrapper #nav-mobile li a:hover {
+          color: #1B98E0; }
+
+#sliders-container {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  height: 100%; }
+  #sliders-container .mySlides {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
 body {
-  background: orange; }
-  body h1 {
-    text-transform: uppercase; }
+  font-family: 'Exo2', sans-serif; }
