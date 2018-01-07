@@ -3,6 +3,7 @@
 @import 'variables';
 @import 'navbar';
 @import 'slider';
+@import 'about';
 
 *{
   box-sizing: border-box;
@@ -14,5 +15,5 @@ a{
 
 body{
   font-family: 'Exo2', sans-serif;
-
+  font-size: 16px;
 }

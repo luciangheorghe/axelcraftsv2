@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,600i,700,800|Exo:300,400,500,600,700,700i,800");
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -47,9 +48,9 @@ table {
   border-spacing: 0; }
 
 .container {
+  font-family: 'Exo', sans-serif;
   width: 70%;
-  height: 50px;
-  background: yellow;
+  height: 10%;
   margin: 0 auto; }
   .container .nav-wrapper {
     height: 100%;
@@ -59,9 +60,10 @@ table {
     justify-content: space-between; }
     .container .nav-wrapper .brand-logo {
       text-transform: uppercase;
-      font-size: 25px;
+      font-size: 1.5rem;
       padding: 0 0 0 15px;
-      color: #757780; }
+      color: #757780;
+      letter-spacing: 2px; }
     .container .nav-wrapper #nav-mobile {
       display: flex;
       flex-direction: row; }
@@ -69,8 +71,9 @@ table {
         color: #757780;
         padding: 0 15px;
         text-transform: uppercase;
-        font-size: 13px;
-        letter-spacing: 1px;
+        font-weight: 700;
+        font-size: 0.75rem;
+        letter-spacing: 2px;
         transition: all .6s ease-in-out; }
         .container .nav-wrapper #nav-mobile li a:hover {
           color: #1B98E0; }
@@ -80,13 +83,87 @@ table {
   top: 0;
   left: 0;
   display: block;
-  height: 100%; }
+  height: 90%; }
   #sliders-container .mySlides {
     position: absolute;
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover; }
+  #sliders-container .main-title {
+    font-family: 'Indie Flower', cursive;
+    color: #1B98E0;
+    text-shadow: 4px 4px 2px black;
+    text-align: center;
+    font-size: 5.2rem;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+
+#about {
+  font-family: 'Exo', sans-serif;
+  margin: 0 auto;
+  width: 70%;
+  height: 600px;
+  display: flex;
+  flex-direction: row; }
+  #about .user-details {
+    width: 50%;
+    height: 100%;
+    background: lightgreen;
+    padding: 15px 15px 15px 15px;
+    display: flex;
+    flex-direction: column-reverse; }
+    #about .user-details .square {
+      width: 100%;
+      height: 300px;
+      background: #EBEBEB;
+      position: relative; }
+      #about .user-details .square .user-img {
+        position: absolute;
+        top: -110px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0); }
+        #about .user-details .square .user-img img {
+          width: 220px;
+          height: auto;
+          border-radius: 50%; }
+      #about .user-details .square .user-name {
+        text-align: center;
+        position: absolute;
+        bottom: 80px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0); }
+        #about .user-details .square .user-name h2 {
+          font-size: 2.1rem;
+          padding-bottom: 20px;
+          letter-spacing: 1px;
+          color: #1B98E0; }
+        #about .user-details .square .user-name p {
+          font-size: 1.3rem;
+          color: #5D5D60;
+          letter-spacing: 1px; }
+  #about .about-description {
+    padding: 15px 15px 15px 15px;
+    width: 50%;
+    height: 100%;
+    background: lightblue;
+    text-align: center; }
+    #about .about-description h2 {
+      font-size: 2rem;
+      padding-bottom: 20px; }
 
 * {
   box-sizing: border-box; }
@@ -95,4 +172,5 @@ a {
   text-decoration: none; }
 
 body {
-  font-family: 'Exo2', sans-serif; }
+  font-family: 'Exo2', sans-serif;
+  font-size: 16px; }

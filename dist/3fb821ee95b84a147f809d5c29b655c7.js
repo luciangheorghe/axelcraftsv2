@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({13:[function(require,module,exports) {
+})({15:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -100,7 +100,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],8:[function(require,module,exports) {
+},{}],9:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":13}],6:[function(require,module,exports) {
+},{"./bundle-url":15}],7:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":8}],7:[function(require,module,exports) {
+},{"_css_loader":9}],8:[function(require,module,exports) {
 // module.exports = {
   var slideIndex = 0;
   carousel();
@@ -156,13 +156,13 @@ module.exports = reloadCSS;
   }
 // }
 
-},{}],5:[function(require,module,exports) {
+},{}],6:[function(require,module,exports) {
 "use strict";
 
 require("../scss/main.scss");
 
 var sliders = require('./slider.js');
-},{"../scss/main.scss":6,"./slider.js":7}],0:[function(require,module,exports) {
+},{"../scss/main.scss":7,"./slider.js":8}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -180,7 +180,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':44017/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':43495/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
@@ -281,4 +281,4 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id)
   });
 }
-},{}]},{},[0,5])
+},{}]},{},[0,6])
