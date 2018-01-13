@@ -116,7 +116,6 @@ table {
   #about .user-details {
     width: 50%;
     height: 100%;
-    background: lightgreen;
     padding: 15px 15px 15px 15px;
     display: flex;
     flex-direction: column-reverse; }
@@ -159,11 +158,165 @@ table {
     padding: 15px 15px 15px 15px;
     width: 50%;
     height: 100%;
-    background: lightblue;
-    text-align: center; }
+    position: relative; }
     #about .about-description h2 {
-      font-size: 2rem;
-      padding-bottom: 20px; }
+      color: #1B98E0;
+      padding-bottom: 25px;
+      text-align: center;
+      font-size: 2.2rem;
+      padding-bottom: 20px;
+      position: relative;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%); }
+    #about .about-description p {
+      font-size: 1.1rem;
+      letter-spacing: 1.5px;
+      line-height: 200%;
+      text-align: justify;
+      color: #757780;
+      width: 100%;
+      position: relative;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      -webkit-transform: translate(-50%, -60%);
+      -moz-transform: translate(-50%, -60%);
+      -ms-transform: translate(-50%, -60%); }
+
+#services {
+  font-family: 'Exo', sans-serif;
+  margin: 0 auto;
+  width: 70%;
+  height: 800px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  #services h2 {
+    color: #1B98E0;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 40px 0 60px 0; }
+  #services ul {
+    display: flex;
+    flex-direction: row; }
+    #services ul li {
+      padding: 20px 20px 20px 20px; }
+      #services ul li .fa {
+        font-size: 2.5rem;
+        color: #1B98E0;
+        padding: 20px 0 20px 0; }
+      #services ul li h3 {
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        padding-top: 30px;
+        padding-bottom: 40px; }
+      #services ul li p {
+        color: #757780;
+        letter-spacing: 2px;
+        line-height: 200%;
+        text-align: justify; }
+
+#recent-work {
+  font-family: 'Exo', sans-serif;
+  width: 100%;
+  height: auto; }
+  #recent-work h2 {
+    color: #1B98E0;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 40px 0 15px 0; }
+  #recent-work h3 {
+    text-align: center;
+    color: #757780;
+    padding: 0 0 20px 0; }
+  #recent-work .line {
+    margin: 0 auto;
+    width: 100px;
+    border-bottom: 2px solid #E8F1F2; }
+  #recent-work .projects-gallery {
+    padding: 40px 0 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    #recent-work .projects-gallery .image {
+      width: 33.33%;
+      height: 400px; }
+      #recent-work .projects-gallery .image .image-wrapper .only {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+    #recent-work .projects-gallery .quote-bar {
+      background: #E8F1F2;
+      width: 100%;
+      height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      #recent-work .projects-gallery .quote-bar p {
+        color: #1B98E0;
+        padding: 0 40px 0 0; }
+      #recent-work .projects-gallery .quote-bar .btn {
+        border-style: none;
+        background: #1B98E0;
+        color: white;
+        padding: 10px 30px 10px 30px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px; }
+
+#meet-team {
+  font-family: 'Exo', sans-serif;
+  margin: 0 auto;
+  width: 70%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #meet-team h2 {
+    color: #1B98E0;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 40px 0 15px 0; }
+  #meet-team .sub-title {
+    color: #757780;
+    padding: 0 0 20px 0; }
+  #meet-team .line {
+    width: 100px;
+    border-bottom: 2px solid #E8F1F2; }
+  #meet-team .team {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    #meet-team .team .member {
+      width: 300px;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      #meet-team .team .member .photo {
+        padding: 60px 0 0 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
+      #meet-team .team .member h3 {
+        font-size: 1.2rem;
+        color: #1B98E0;
+        text-transform: uppercase;
+        padding: 20px 0 10px 0; }
+      #meet-team .team .member h4 {
+        color: #757780; }
+
+#clients-opinion {
+  width: 100%;
+  height: 600px;
+  background: lightgreen; }
 
 * {
   box-sizing: border-box; }

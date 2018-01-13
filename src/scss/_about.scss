@@ -8,15 +8,13 @@
   .user-details{
     width: 50%;
     height: 100%;
-    background: lightgreen;
+    // background: lightgreen;
     padding: 15px 15px 15px 15px;
     display: flex;
     flex-direction: column-reverse;
     .square{
       width: 100%;
       height: 300px;
-
-
       background: #EBEBEB;
       position: relative;
       .user-img{
@@ -60,11 +58,37 @@
     padding: 15px 15px 15px 15px;
     width: 50%;
     height: 100%;
-    background: lightblue;
-    text-align: center;
+    // background: lightblue;
+    position: relative;
     h2{
-      font-size: 2rem;
+      color: $lightblue;
+      padding-bottom: 25px;
+      text-align: center;
+      font-size: 2.2rem;
       padding-bottom: 20px;
+      position: relative;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+    }
+    p{
+      font-size: 1.1rem;
+      letter-spacing: 1.5px;
+      line-height: 200%;
+      text-align: justify;
+      color: $lightgrey;
+      width: 100%;
+      position: relative;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -60%);
+      -webkit-transform: translate(-50%, -60%);
+      -moz-transform: translate(-50%, -60%);
+      -ms-transform: translate(-50%, -60%);
+
     }
   }
 }
