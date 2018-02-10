@@ -206,7 +206,11 @@ table {
     flex-direction: row; }
     #services ul li {
       padding: 20px 20px 20px 20px; }
-      #services ul li .fa {
+      #services ul li .fas {
+        font-size: 2.5rem;
+        color: #1B98E0;
+        padding: 20px 0 20px 0; }
+      #services ul li .far {
         font-size: 2.5rem;
         color: #1B98E0;
         padding: 20px 0 20px 0; }
@@ -244,12 +248,56 @@ table {
     flex-direction: row;
     flex-wrap: wrap; }
     #recent-work .projects-gallery .image {
+      position: relative;
       width: 33.33%;
       height: 400px; }
       #recent-work .projects-gallery .image .image-wrapper .only {
         width: 100%;
         height: 100%;
         object-fit: cover; }
+      #recent-work .projects-gallery .image .copy-wrapper .grey-bg {
+        background: #efefef;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        transition: all .3s ease-in-out;
+        overflow: hidden; }
+        #recent-work .projects-gallery .image .copy-wrapper .grey-bg:hover {
+          opacity: .9; }
+          #recent-work .projects-gallery .image .copy-wrapper .grey-bg:hover .project-info .project-details {
+            transform: translate3d(0, 0, 0);
+            opacity: 1; }
+          #recent-work .projects-gallery .image .copy-wrapper .grey-bg:hover .project-info .project-title {
+            transform: translate3d(0, 0, 0);
+            opacity: 1; }
+        #recent-work .projects-gallery .image .copy-wrapper .grey-bg .project-info {
+          width: 100%;
+          padding: 56px;
+          position: absolute;
+          bottom: 0; }
+          #recent-work .projects-gallery .image .copy-wrapper .grey-bg .project-info .project-details {
+            position: relative;
+            font-size: 1.1rem;
+            text-transform: capitalize;
+            margin: 0 0 1rem 0;
+            transform: translate3d(-200px, 0, 0);
+            opacity: 0;
+            transition: all 0.3s ease-in; }
+          #recent-work .projects-gallery .image .copy-wrapper .grey-bg .project-info .project-title {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            transform: translate3d(-100px, 0, 0);
+            opacity: 0;
+            transition: all 0.3s ease-in .1s; }
+          #recent-work .projects-gallery .image .copy-wrapper .grey-bg .project-info .fa-long-arrow-alt-right {
+            font-size: 3rem;
+            position: absolute;
+            bottom: 56px;
+            right: 56px; }
     #recent-work .projects-gallery .quote-bar {
       background: #E8F1F2;
       width: 100%;
@@ -439,7 +487,41 @@ table {
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       border-radius: 5px;
-      margin: 20px 0 0 0; }
+      margin: 20px 0 0 0;
+      align-self: flex-end; }
+
+#footer {
+  font-family: 'Exo', sans-serif;
+  background: #13293D;
+  width: 100%;
+  height: auto; }
+  #footer .footer-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px 50px 30px; }
+    #footer .footer-box .copyright {
+      font-size: 0.8rem;
+      color: #1B98E0;
+      letter-spacing: 1px;
+      padding: 0 10px 0 10px; }
+    #footer .footer-box .sub-menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center; }
+      #footer .footer-box .sub-menu .menu-box {
+        display: flex;
+        flex-direction: row; }
+        #footer .footer-box .sub-menu .menu-box li {
+          font-size: 0.8rem;
+          color: #FFFFFF;
+          letter-spacing: 1px;
+          padding: 0 10px 0 10px;
+          text-transform: uppercase; }
+      #footer .footer-box .sub-menu .fa-angle-up {
+        color: #1B98E0;
+        padding: 0 10px 0 10px; }
 
 * {
   box-sizing: border-box; }
