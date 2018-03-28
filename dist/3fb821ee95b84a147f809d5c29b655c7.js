@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({29:[function(require,module,exports) {
+})({30:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -100,7 +100,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],17:[function(require,module,exports) {
+},{}],18:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":29}],15:[function(require,module,exports) {
+},{"./bundle-url":30}],16:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":17}],16:[function(require,module,exports) {
+},{"_css_loader":18}],15:[function(require,module,exports) {
 // module.exports = {
   var slideIndex = 0;
   carousel();
@@ -156,13 +156,40 @@ module.exports = reloadCSS;
   }
 // }
 
+},{}],17:[function(require,module,exports) {
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $("a").on('click', function(event) {
+
+  // Prevent default anchor click behavior
+  event.preventDefault();
+
+  // Store hash
+  var hash = this.hash;
+
+  // Using jQuery's animate() method to add smooth page scroll
+  // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+  $('html, body').animate({
+     scrollTop: $(hash).offset().top
+  }, 900, function(){
+
+    // Add hash (#) to URL when done scrolling (default click behavior)
+     window.location.hash = hash;
+    });
+  });
+  // $('[data-toggle="tooltip"]').tooltip();
+
+});
+
 },{}],8:[function(require,module,exports) {
 "use strict";
 
 require("../scss/main.scss");
 
 var sliders = require('./slider.js');
-},{"../scss/main.scss":15,"./slider.js":16}],0:[function(require,module,exports) {
+
+var menu = require('./menu.js');
+},{"../scss/main.scss":16,"./slider.js":15,"./menu.js":17}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -180,7 +207,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':45187/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':46497/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
