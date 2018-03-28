@@ -180,7 +180,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':34133/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':45187/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 

@@ -4,6 +4,7 @@
   margin: 0 auto;
   width: 70%;
   height: auto;
+  padding: 0 0 90px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +12,7 @@
   h2{
     color: $lightblue;
     font-size: 2.2rem;
-    padding: 40px 0 15px 0;
+    padding: 90px 0 15px 0;
   }
   .line{
     width: 100px;
@@ -27,7 +28,7 @@
   .form-box{
     position: relative;
     width: 60%;
-    padding: 50px 0 40px 0;
+    padding: 50px 0 0 0;
     display: flex;
     flex-direction: column;
     .row-1{

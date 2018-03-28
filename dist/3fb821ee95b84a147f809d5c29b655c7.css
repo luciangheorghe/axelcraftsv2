@@ -110,13 +110,14 @@ table {
   font-family: 'Exo', sans-serif;
   margin: 0 auto;
   width: 70%;
-  height: 600px;
+  height: auto;
+  padding: 160px 0 90px 0;
   display: flex;
   flex-direction: row; }
   #about .user-details {
     width: 50%;
-    height: 100%;
-    padding: 15px 15px 15px 15px;
+    height: auto;
+    padding: 15px 30px 0 40px;
     display: flex;
     flex-direction: column-reverse; }
     #about .user-details .square {
@@ -155,9 +156,9 @@ table {
           color: #5D5D60;
           letter-spacing: 1px; }
   #about .about-description {
-    padding: 15px 15px 15px 15px;
+    padding: 15px 40px 15px 30px;
     width: 50%;
-    height: 100%;
+    height: auto;
     position: relative; }
     #about .about-description h2 {
       color: #1B98E0;
@@ -166,7 +167,7 @@ table {
       font-size: 2.2rem;
       padding-bottom: 20px;
       position: relative;
-      top: 40%;
+      top: 20%;
       left: 50%;
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
@@ -180,7 +181,7 @@ table {
       color: #757780;
       width: 100%;
       position: relative;
-      top: 60%;
+      top: 50%;
       left: 50%;
       transform: translate(-50%, -60%);
       -webkit-transform: translate(-50%, -60%);
@@ -191,8 +192,8 @@ table {
   font-family: 'Exo', sans-serif;
   margin: 0 auto;
   width: 70%;
-  height: 800px;
-  padding: 20px;
+  height: auto;
+  padding: 20px 20px 70px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center; }
@@ -200,7 +201,7 @@ table {
     color: #1B98E0;
     text-align: center;
     font-size: 2.2rem;
-    padding: 40px 0 60px 0; }
+    padding: 50px 0 60px 0; }
   #services ul {
     display: flex;
     flex-direction: row; }
@@ -233,7 +234,7 @@ table {
     color: #1B98E0;
     text-align: center;
     font-size: 2.2rem;
-    padding: 40px 0 15px 0; }
+    padding: 90px 0 15px 0; }
   #recent-work h3 {
     text-align: center;
     color: #757780;
@@ -321,7 +322,7 @@ table {
   font-family: 'Exo', sans-serif;
   margin: 0 auto;
   width: 70%;
-  height: 600px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -329,7 +330,7 @@ table {
     color: #1B98E0;
     text-align: center;
     font-size: 2.2rem;
-    padding: 40px 0 15px 0; }
+    padding: 90px 0 15px 0; }
   #meet-team .sub-title {
     color: #757780;
     padding: 0 0 20px 0; }
@@ -338,12 +339,15 @@ table {
     border-bottom: 2px solid #E8F1F2; }
   #meet-team .team {
     width: 100%;
+    height: auto;
+    padding: 0 0 90px 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around; }
     #meet-team .team .member {
-      width: 300px;
-      height: 400px;
+      width: 350px;
+      height: 500px;
+      padding: 20px 0 60px 0;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -366,6 +370,7 @@ table {
   width: 100%;
   height: auto;
   background: #EBEBEB;
+  padding: 0 0 90px 0;
   display: flex;
   flex-direction: column;
   align-items: center; }
@@ -373,12 +378,12 @@ table {
     color: #13293D;
     text-align: center;
     font-size: 2.2rem;
-    padding: 40px 0 15px 0; }
+    padding: 90px 0 15px 0; }
   #clients-opinion .line {
     width: 100px;
     border-bottom: 2px solid #1B98E0; }
   #clients-opinion .client {
-    padding: 50px 0 40px 0;
+    padding: 50px 0 0 0;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -424,6 +429,7 @@ table {
   margin: 0 auto;
   width: 70%;
   height: auto;
+  padding: 0 0 90px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -431,7 +437,7 @@ table {
   #form h2 {
     color: #1B98E0;
     font-size: 2.2rem;
-    padding: 40px 0 15px 0; }
+    padding: 90px 0 15px 0; }
   #form .line {
     width: 100px;
     border-bottom: 2px solid #E8F1F2; }
@@ -444,7 +450,7 @@ table {
   #form .form-box {
     position: relative;
     width: 60%;
-    padding: 50px 0 40px 0;
+    padding: 50px 0 0 0;
     display: flex;
     flex-direction: column; }
     #form .form-box .row-1 {
