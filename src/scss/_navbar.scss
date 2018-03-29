@@ -1,14 +1,21 @@
-.container{
+#container-nav{
   font-family: 'Exo', sans-serif;
-  width: 70%;
+  width: 100%;
   height: 10%;
   margin: 0 auto;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background: #FFFCFF;
+  opacity: 0.85;
+
   .nav-wrapper{
     height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+
     .brand-logo{
       text-transform: uppercase;
       font-size: 1.5rem;
@@ -16,6 +23,7 @@
       color: $lightgrey;
       letter-spacing: 2px;
     }
+
     #nav-mobile{
       display: flex;
       flex-direction: row;

@@ -1,15 +1,20 @@
-<html>
+<!-- <!DOCTYPE html> -->
+<html lang="en">
 <head>
-  <meta charset="utf-8">
   <title>Axel Crafts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is a Presetantion Website">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 <link rel="stylesheet" href="/dist/3fb821ee95b84a147f809d5c29b655c7.css"></head>
 <body>
-  <nav class="container">
+
+  <!--Responsive Navigation Bar-->
+  <nav id="container-nav">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo">Axel Crafts</a>
+          <a href="#container-nav" class="brand-logo">Axel Crafts</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#">Home</a></li>
+            <li><a href="#container-nav">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#recent-work">Portofolio</a></li>
@@ -18,6 +23,7 @@
         </div>
     </nav>
 
+    <!--Home Page Carousel-->
     <section id="sliders-container">
         <img class="mySlides" src="/dist/324397342df115da9898a6885f14e525.jpeg" alt="buckets">
         <img class="mySlides" src="/dist/631f368e34f675404beb55c0dec2acb9.jpeg" alt="brush">
@@ -27,6 +33,7 @@
         </div>
     </section>
 
+    <!--About Section-->
     <section id="about">
       <div class="user-details">
         <div class="square">
@@ -43,11 +50,11 @@
         <h2>About</h2>
         <p>
           Hi! My name is Alex Gheorghe and I'm an artist. I've always been drawn to the overlap between T-Shirt Painting and Spray Landscapes. I enjoy each aspect, and love building family portraits and galactical landscapes from start to finish, for clients all over the world.
-
         </p>
       </div>
     </section>
 
+    <!--Services Section-->
     <section id="services">
       <h2>Services</h2>
         <ul class="job-description">
@@ -75,9 +82,10 @@
         </ul>
     </section>
 
+    <!--Works Section-->
     <section id="recent-work">
-      <h2>Recent Work</h2>
-      <h3>An eye for detail makes my work beautiful</h3>
+      <h2 class="title-mid">Recent Work</h2>
+      <h3>An eye for detail makes our work beautiful</h3>
       <div class="line"></div>
       <div class="projects-gallery">
         <div class="image">
@@ -192,11 +200,98 @@
           <p>
             Let us know if you got an interesting project and want to work togheter!
           </p>
-          <button class="btn">Get Free Quote</button>
+          <button class="btn" data-popup-open="popup-1">Get Free Quote</button>
+        </div>
+      </div>
+      <div class="popup" data-popup="popup-1">
+        <div class="popup-inner">
+
+          <h2 class="title">Get a Free Quote!</h2>
+
+          <div class="quote-form">
+
+            <div class="form-row">
+              <div class="fields-name">
+                <p>Name</p>
+              </div>
+              <div class="fields">
+                <input class="name" type="text" placeholder="First Name">
+                <input class="name" type="text" placeholder="Last Name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="fields-name">
+                <p>E-mail</p>
+              </div>
+              <div class="fields">
+                <input class="email" type="text" placeholder="example@example.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="fields-name">
+                <p>Phone Number</p>
+              </div>
+              <div class="fields">
+                <input class="name-1" type="number" placeholder="Area Code">
+                <input class="name" type="number" placeholder="Phone Number">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="fields-name">
+                <p>Address</p>
+              </div>
+              <div class="fields-1">
+                <input class="name" type="text" placeholder="Street Address">
+                <input class="name" type="text" placeholder="Street Address Line 2">
+                <input class="name-1" type="text" placeholder="City">
+                <input class="name-1" type="text" placeholder="State / Province">
+                <input class="name-1" type="text" placeholder="Postal / Zip Code">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="fields-name">
+                <p>Which Service?</p>
+              </div>
+              <div class="fields-2">
+                <div class="row">
+                  <input id="painting" class="name" type="checkbox" value="Painting">
+                  <label for="painting">Painting</label>
+                </div>
+                <div class="row">
+                  <input id="spray" class="name" type="checkbox" value="Spray Painting">
+                  <label for="spray">Spray Painting</label>
+                </div>
+                <div class="row">
+                  <input id="t-shirt" class="name" type="checkbox" value="T-Shirt Design">
+                  <label for="t-shirt">T-Shirt Design</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="fields-name">
+                <p>Additional Information</p>
+              </div>
+              <div class="fields">
+                <textarea class="message" name="comment" placeholder="Your Message"></textarea>
+              </div>
+            </div>
+
+            <button id="sbmt-q" class="btn">Submit Form</button>
+
+          </div>
+
+          <p data-popup-close="popup-1"><a href="#">Close</a></p>
+          <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
         </div>
       </div>
     </section>
 
+    <!--Our Team Section-->
     <section id="meet-team">
       <h2>Meet My Team</h2>
       <h3 class="sub-title">Award winning team with  a passion for design</h3>
@@ -215,6 +310,7 @@
       </div>
     </section>
 
+    <!--Our Clients Opinion Section-->
     <section id="clients-opinion">
       <h3>What Our Clients Say</h3>
       <div class="line"></div>
@@ -237,10 +333,11 @@
       </div>
     </section>
 
+    <!--Get in Touch Section-->
     <section id="form">
       <h2>Stay in Touch with Us</h2>
       <div class="line"></div>
-      <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. </p>
+      <p class="text">We're working hard Monday through Friday, starting bright and early with a cup of lightly creamed coffee. We prefer email, but feel free to give us a ring for good measure. </p>
       <div class="form-box">
         <div class="row-1">
           <input class="name" type="text" placeholder="Your Name">
@@ -252,26 +349,36 @@
         <div class="row-3">
           <textarea class="message" name="comment" placeholder="Your Message"></textarea>
         </div>
-        <button class="btn">Send Message</button>
+        <button id="sbmt" class="btn">Send Message</button>
       </div>
     </section>
 
+    <!--Footer Section-->
     <section id="footer">
       <div class="footer-box">
         <div class="copyright">
-          Copyright 2018, Designed by CodeLuc.
+          Copyright 2018, Designed by CodeLuc. All Rights Reserved.
+        </div>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook-square"></i></a>
+          <a href="#"><i class="fab fa-twitter-square"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
         </div>
         <div class="sub-menu">
           <ul class="menu-box">
-            <li>sitemap</li>
-            <li>privacy policy</li>
-            <li>login</li>
+            <li><a href="#">sitemap</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">login</a></li>
           </ul>
-          <i class="fas fa-angle-up"></i>
+          <a class="pull-right" href="#container-nav" data-toggle="tooltip" title="BACK TO TOP" id="top">
+            <i class="fas fa-angle-up"></i>
+          </a>
         </div>
       </div>
     </section>
 
+    <!--Loading Application JavaScript Section-->
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="/dist/3fb821ee95b84a147f809d5c29b655c7.js"></script>
 </body>

@@ -3,33 +3,60 @@
   background: $footer;
   width: 100%;
   height: auto;
+
   .footer-box{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 30px 50px 30px;
+    padding: 60px 30px 60px 30px;
+
     .copyright{
       font-size: 0.8rem;
       color: #1B98E0;
       letter-spacing: 1px;
       padding: 0 10px 0 10px;
     }
+
+    .social-media{
+
+      .fab{
+        color: $lightblue;
+        padding: 10px;
+        font-size: 1.7rem;
+        transition: all .6s ease-in-out;
+        &:hover{
+          color: #FFF;
+        }
+      }
+    }
+
     .sub-menu{
       display: flex;
       flex-direction: row;
       align-items: center;
+
       .menu-box{
         display: flex;
         flex-direction: row;
+
         li{
           font-size: 0.8rem;
-          color: #FFFFFF;
-          letter-spacing: 1px;
           padding: 0 10px 0 10px;
           text-transform: uppercase;
+
+          a{
+            color: #FFFFFF;
+            letter-spacing: 1px;
+            transition: all .6s ease-in-out;
+
+            &:hover{
+              color: $lightblue;
+            }
+          }
         }
       }
+
       .fa-angle-up{
         color: #1B98E0;
         padding: 0 10px 0 10px;

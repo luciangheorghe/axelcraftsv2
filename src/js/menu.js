@@ -18,6 +18,6 @@ $(document).ready(function(){
      window.location.hash = hash;
     });
   });
-  // $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="tooltip"]').tooltip();
 
 });

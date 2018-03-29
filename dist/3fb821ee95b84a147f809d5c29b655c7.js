@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({30:[function(require,module,exports) {
+})({32:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -100,7 +100,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],18:[function(require,module,exports) {
+},{}],20:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":30}],16:[function(require,module,exports) {
+},{"./bundle-url":32}],15:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":18}],15:[function(require,module,exports) {
+},{"_css_loader":20}],16:[function(require,module,exports) {
 // module.exports = {
   var slideIndex = 0;
   carousel();
@@ -177,8 +177,52 @@ $(document).ready(function(){
      window.location.hash = hash;
     });
   });
-  // $('[data-toggle="tooltip"]').tooltip();
+  $('[data-toggle="tooltip"]').tooltip();
 
+});
+
+},{}],18:[function(require,module,exports) {
+$(document).ready(function(){
+    $('#sbmt').click(function(){
+      alert('Thank you for getting in touch. We will come back to you as soon as possible.')
+    });
+
+    $('#sbmt-q').click(function(){
+      alert('Thank you for sending your quote. We will come back to you as soon as possible.')
+    });
+
+    // $('#search-btn').on('click',function(){
+    //     $('#search-bar').toggleClass('hidden')
+    // });
+    //
+    // $('#pic1').on('mouseover', function () {
+    //     $('#description1').slideDown('slow');
+    // });
+    //
+    // $('#pic2').on('mouseover', function () {
+    //     $('#description2').slideDown('slow');
+    // });
+    //
+    // $('#pic3').on('mouseover', function () {
+    //     $('#description3').slideDown('slow');
+    // });
+
+});
+
+},{}],19:[function(require,module,exports) {
+$(function() {
+  //----- OPEN
+  $('[data-popup-open]').on('click', function(e) {
+    var targeted_popup_class = jQuery(this).attr('data-popup-open');
+    $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350);
+    e.preventDefault();
+  });
+  //----- CLOSE
+  $('[data-popup-close]').on('click', function(e) {
+    var targeted_popup_class = jQuery(this).attr('data-popup-close');
+    $('[data-popup="' + targeted_popup_class + '"]').fadeOut(350);
+    e.preventDefault();
+  });
 });
 
 },{}],8:[function(require,module,exports) {
@@ -189,7 +233,11 @@ require("../scss/main.scss");
 var sliders = require('./slider.js');
 
 var menu = require('./menu.js');
-},{"../scss/main.scss":16,"./slider.js":15,"./menu.js":17}],0:[function(require,module,exports) {
+
+var submit = require('./submit.js');
+
+var quote = require('./quote.js');
+},{"../scss/main.scss":15,"./slider.js":16,"./menu.js":17,"./submit.js":18,"./quote.js":19}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -207,7 +255,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':46497/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':37673/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
