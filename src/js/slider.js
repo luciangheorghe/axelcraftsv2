@@ -1,4 +1,4 @@
-// module.exports = {
+
   var slideIndex = 0;
   carousel();
 
@@ -13,4 +13,3 @@
       x[slideIndex-1].style.display = "block";
       setTimeout(carousel, 10000); // Change image every 10 seconds
   }
-// }

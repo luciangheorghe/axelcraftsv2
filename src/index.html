@@ -12,13 +12,13 @@
   <!--Responsive Navigation Bar-->
   <nav id="container-nav">
         <div class="nav-wrapper">
-          <a href="#container-nav" class="brand-logo">Axel Crafts</a>
+          <a href="#sliders-container" class="brand-logo">Axel Crafts</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#container-nav">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#recent-work">Portofolio</a></li>
-            <li><a href="#form">Contact</a></li>
+            <li><a href="#sliders-container" class="smoothscroll">Home</a></li>
+            <li><a href="#about" class="smoothscroll">About</a></li>
+            <li><a href="#services" class="smoothscroll">Services</a></li>
+            <li><a href="#recent-work" class="smoothscroll">Portofolio</a></li>
+            <li><a href="#form" class="smoothscroll">Contact</a></li>
           </ul>
         </div>
     </nav>
@@ -312,25 +312,72 @@
 
     <!--Our Clients Opinion Section-->
     <section id="clients-opinion">
-      <h3>What Our Clients Say</h3>
+      <h3 class="title-clients-section">What Our Clients Say</h3>
       <div class="line"></div>
-      <div class="client">
-        <div class="content">
-          <i class="fa fa-chevron-left" aria-hidden="true"></i>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magnaaliqua. Ut enim ad minim veniam, quis nostrud exercitationullamco laboris nisi ut
-              aliquip ex ea commodo consequat.</p>
-          <i class="fa fa-chevron-right" aria-hidden="true"></i>
-        </div>
-        <div class="client-details">
-          <div class="photo-wrapper">
-            <img class="photo" src="img/cami-profile.jpg" alt="cami" />
-          </div>
-          <div class="client-info">
-            <h4>Tatar Camelia</h4>
-            <h5>CAM Events LLC</h5>
-          </div>
+
+      <div class="btn-bar">
+        <div id="buttons">
+          <a id="prev" href="#"><</a>
+          <!-- <a id="prev" href="#"><i class="fa fa-chevron-left" aria-hidden="true"></i></a> -->
+          <a id="next" href="#">></a>
+          <!-- <a id="next" href="#"><i class="fa fa-chevron-right" aria-hidden="true"></i></a> -->
         </div>
       </div>
+
+      <div id="clients">
+        <ul>
+
+          <li class="client">
+            <div class="content">
+              <p class="client-phrase">The project involved a lot of design exploration. Axel Crafts helped me to come up with different concepts and showed different paths that the design may take. Always available to set up chat room, Skype, or hangouts. Pleasant to work with. I'd recommend Axel Crafts to anyone who's looking for a perfect gift.</p>
+            </div>
+            <div class="client-details">
+              <div class="photo-wrapper">
+                <img class="photo" src="img/cami-profile.jpg" alt="cami" />
+              </div>
+              <div class="client-info">
+                <h4>Tatar Camelia</h4>
+                <h5>CAM Events LLC</h5>
+              </div>
+            </div>
+          </li>
+
+          <li class="client">
+            <div class="content">
+              <p class="client-phrase">Axel Crafts is a great team. They have a lot of skills and experience in painting and spray painting area. They helped me a lot to create the perfect painting for our office. Their practical knowledge in Spary Painting is just marvelous. Very co-operative, patient and communicative.</p>
+            </div>
+            <div class="client-details">
+              <div class="photo-wrapper">
+                <img class="photo" src="img/dani.jpeg" alt="dani" />
+              </div>
+              <div class="client-info">
+                <h4>Daniel Gheorghe</h4>
+                <h5>DIAMOND Photo LLC</h5>
+              </div>
+            </div>
+          </li>
+
+          <li class="client">
+            <div class="content">
+              <p class="client-phrase">Axel Crafts did an amazing job and delivered top quality artwork. I would hire them again.</p>
+            </div>
+            <div class="client-details">
+              <div class="photo-wrapper">
+                <img class="photo" src="img/valer.jpeg" alt="valer" />
+              </div>
+              <div class="client-info">
+                <h4>Valerian Alecsa</h4>
+                <h5>VAL Sketches LLC</h5>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+
+      </div>
+
+
     </section>
 
     <!--Get in Touch Section-->
@@ -371,7 +418,7 @@
             <li><a href="#">privacy policy</a></li>
             <li><a href="#">login</a></li>
           </ul>
-          <a class="pull-right" href="#container-nav" data-toggle="tooltip" title="BACK TO TOP" id="top">
+          <a class="pull-right" href="#sliders-container" data-toggle="tooltip" title="BACK TO TOP" id="top">
             <i class="fas fa-angle-up"></i>
           </a>
         </div>

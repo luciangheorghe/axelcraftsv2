@@ -488,62 +488,93 @@ table {
 
 #clients-opinion {
   font-family: 'Exo', sans-serif;
-  width: 100%;
-  height: auto;
-  background: #EBEBEB;
-  padding: 150px 0 150px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  #clients-opinion h3 {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  padding: 150px 0 150px 0; }
+  #clients-opinion .title-clients-section {
     color: #13293D;
     text-align: center;
     font-size: 2.2rem;
     padding: 0 0 15px 0; }
   #clients-opinion .line {
+    margin: 0 auto;
     width: 100px;
     border-bottom: 2px solid #1B98E0; }
-  #clients-opinion .client {
-    padding: 50px 0 0 0;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    #clients-opinion .client .content {
-      padding: 20px 0;
-      text-align: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: center; }
-      #clients-opinion .client .content .fa {
-        padding: 20px;
-        color: #1B98E0; }
-      #clients-opinion .client .content p {
-        color: #757780;
-        line-height: 1.5; }
-    #clients-opinion .client .client-details {
-      padding: 30px 0 0 0;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center; }
-      #clients-opinion .client .client-details .photo-wrapper {
-        width: 70px;
-        height: 70px; }
-        #clients-opinion .client .client-details .photo-wrapper .photo {
-          border-radius: 50%;
-          width: 100%;
-          height: 100%;
-          object-fit: cover; }
-      #clients-opinion .client .client-details .client-info {
-        padding: 0 0 0 20px; }
-        #clients-opinion .client .client-details .client-info h4 {
-          color: #1B98E0; }
-        #clients-opinion .client .client-details .client-info h5 {
-          font-size: 0.7rem;
-          font-style: italic;
-          color: #757780;
-          padding: 5px 0 0 0; }
+  #clients-opinion .btn-bar {
+    max-width: 346px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: 40px;
+    width: 100%; }
+    #clients-opinion .btn-bar #buttons {
+      padding: 0 0 5px 0; }
+      #clients-opinion .btn-bar #buttons a {
+        text-align: center;
+        display: block;
+        font-size: 50px;
+        float: left;
+        outline: 0;
+        margin: 0 67px;
+        color: #1B98E0;
+        text-decoration: none;
+        display: block;
+        padding: 9px;
+        width: 35px; }
+  #clients-opinion #clients {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 300px; }
+    #clients-opinion #clients ul {
+      list-style: none;
+      width: 100%;
+      height: 250px;
+      margin: 0;
+      padding: 0;
+      position: relative; }
+      #clients-opinion #clients ul li {
+        width: 100%;
+        height: 250px;
+        float: left;
+        text-align: center;
+        position: relative; }
+        #clients-opinion #clients ul li .content {
+          display: table;
+          width: 100%; }
+          #clients-opinion #clients ul li .content .client-phrase {
+            font-weight: 100;
+            line-height: 1.5;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 5px 20px;
+            height: 200px;
+            font-size: 1.2rem;
+            color: #757780; }
+        #clients-opinion #clients ul li .client-details {
+          padding: 30px 0 0 0;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center; }
+          #clients-opinion #clients ul li .client-details .photo-wrapper {
+            width: 70px;
+            height: 70px; }
+            #clients-opinion #clients ul li .client-details .photo-wrapper .photo {
+              border-radius: 50%;
+              width: 100%;
+              height: 100%;
+              object-fit: cover; }
+          #clients-opinion #clients ul li .client-details .client-info {
+            padding: 0 0 0 20px; }
+            #clients-opinion #clients ul li .client-details .client-info h4 {
+              color: #1B98E0; }
+            #clients-opinion #clients ul li .client-details .client-info h5 {
+              font-size: 0.7rem;
+              font-style: italic;
+              color: #757780;
+              padding: 5px 0 0 0; }
 
 #form {
   font-family: 'Exo', sans-serif;
