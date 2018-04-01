@@ -8,7 +8,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  h2{
+  #team-title{
     color: $lightblue;
     text-align: center;
     font-size: 2.2rem;
@@ -22,7 +22,7 @@
     width: 100px;
     border-bottom: 2px solid #E8F1F2;
   }
-  .team{
+  #team{
     width: 100%;
     height: auto;
     padding: 0 0 0 0;
@@ -44,15 +44,74 @@
         height: 100%;
         object-fit: cover;
       }
-      h3{
+      .member-name{
         font-size: 1.2rem;
         color: $lightblue;
         text-transform: uppercase;
         padding: 20px 0 10px 0;
       }
-      h4{
+      .member-position{
         color: $lightgrey;
       }
     }
   }
+}
+
+//phone
+@media (max-width: 767px) {
+  #meet-team{
+    padding: 50px 0 50px 0;
+    #team-title{
+      font-size: 1.9rem;
+    }
+    .sub-title{
+      font-size: 0.9rem;
+    }
+    #team{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 0 0 0;
+    }
+  }
+}
+//tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  #meet-team{
+    padding: 50px 0 50px 0;
+    #team-title{
+      font-size: 1.9rem;
+    }
+    .sub-title{
+      font-size: 0.9rem;
+    }
+    #team{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 0 0 0;
+    }
+  }
+}
+//laptop
+@media (min-width: 992px) and (max-width: 1199px) {
+  #meet-team{
+    padding: 50px 0 50px 0;
+    #team-title{
+      font-size: 1.9rem;
+    }
+    .sub-title{
+      font-size: 0.9rem;
+    }
+    #team{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 0 0 0;
+    }
+  }
+}
+//extra big
+@media (min-width: 1200px) and (max-width: 1580px){
+
 }

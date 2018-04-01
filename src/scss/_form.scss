@@ -9,7 +9,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  h2{
+  #form-title{
     color: $lightblue;
     font-size: 2.2rem;
     padding: 0 0 15px 0;
@@ -25,7 +25,7 @@
     line-height: 1.5;
     padding: 20px 0 0 0;
   }
-  .form-box{
+  #form-box{
     position: relative;
     width: 60%;
     padding: 50px 0 0 0;
@@ -83,4 +83,109 @@
       align-self: flex-end;
     }
   }
+}
+
+
+//phone
+@media (max-width: 767px) {
+  #form{
+    padding: 50px 0 50px 0;
+    width: 95%;
+    #form-title{
+      font-size: 1.9rem;
+    }
+    .text{
+      font-size: 0.9rem;
+    }
+    #form-box{
+      .row-1{
+        .name{
+          font-size: 0.9rem;
+        }
+        .email{
+          font-size: 0.9rem;
+        }
+      }
+      .row-2{
+        .title{
+          font-size: 0.9rem;
+        }
+      }
+      .row-3{
+        .message{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+//tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  #form{
+    padding: 50px 0 50px 0;
+    width: 95%;
+    #form-title{
+      font-size: 1.9rem;
+    }
+    .text{
+      font-size: 0.9rem;
+    }
+    #form-box{
+      .row-1{
+        .name{
+          font-size: 0.9rem;
+        }
+        .email{
+          font-size: 0.9rem;
+        }
+      }
+      .row-2{
+        .title{
+          font-size: 0.9rem;
+        }
+      }
+      .row-3{
+        .message{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+//laptop
+@media (min-width: 992px) and (max-width: 1199px) {
+  #form{
+    padding: 50px 0 50px 0;
+    width: 95%;
+    #form-title{
+      font-size: 1.9rem;
+    }
+    .text{
+      font-size: 0.9rem;
+    }
+    #form-box{
+      .row-1{
+        .name{
+          font-size: 0.9rem;
+        }
+        .email{
+          font-size: 0.9rem;
+        }
+      }
+      .row-2{
+        .title{
+          font-size: 0.9rem;
+        }
+      }
+      .row-3{
+        .message{
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+//extra big
+@media (min-width: 1200px) and (max-width: 1580px){
+
 }

@@ -15,6 +15,7 @@
       font-size: 0.8rem;
       color: #1B98E0;
       letter-spacing: 1px;
+      line-height: 150%;
       padding: 0 10px 0 10px;
     }
 
@@ -63,4 +64,70 @@
       }
     }
   }
+}
+
+
+//phone
+@media (max-width: 767px) {
+  #footer{
+    .footer-box{
+      display: flex;
+      justify-content: space-between;
+      .copyright{
+        width: 33%;
+        line-height: 150%
+      }
+      .social-media{
+        width: 33%;
+      }
+      .sub-menu{
+        display: flex;
+        flex-direction: row;
+        padding: 0 5px;
+        .menu-box{
+          display: flex;
+          flex-direction: column;
+          li{
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+  }
+}
+//tablet
+@media (min-width: 768px) and (max-width: 991px) {
+  #footer{
+    .footer-box{
+      display: flex;
+      justify-content: space-between;
+      .copyright{
+        width: 33%;
+        line-height: 150%
+      }
+      .social-media{
+        width: 33%;
+      }
+      .sub-menu{
+        display: flex;
+        flex-direction: row;
+        padding: 0 5px;
+        .menu-box{
+          display: flex;
+          flex-direction: column;
+          li{
+            padding: 5px 0;
+          }
+        }
+      }
+    }
+  }
+}
+//laptop
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+//extra big
+@media (min-width: 1200px) and (max-width: 1580px){
+
 }
