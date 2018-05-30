@@ -1,5 +1,4 @@
 #clients-opinion{
-  // background: lightgreen;
   font-family: 'Exo', sans-serif;
   position: relative;
   width:60%;
@@ -28,8 +27,6 @@
 
     #buttons {
     padding:0 0 5px 0;
-    // margin: 0 auto;
-    // float:right;
       a{
         text-align: center;
         display: block;
@@ -79,8 +76,6 @@
             height: 200px;
             font-size: 1.2rem;
             color: $lightgrey;
-            // font-style: italic;
-            // text-shadow:.5px 0px #b14943;
           }
         }
         .client-details{
@@ -148,8 +143,6 @@
           .client-details{
             padding: 0;
             .photo-wapper{
-              // width: 60px;
-              // height: 60px;
             }
           }
         }
@@ -187,8 +180,6 @@
           .client-details{
             padding: 0;
             .photo-wapper{
-              // width: 60px;
-              // height: 60px;
             }
           }
         }
@@ -226,8 +217,6 @@
           .client-details{
             padding: 0;
             .photo-wapper{
-              // width: 60px;
-              // height: 60px;
             }
           }
         }
@@ -237,5 +226,32 @@
 }
 //extra big
 @media (min-width: 1200px) and (max-width: 1580px){
-
+  #clients-opinion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title-clients-section{
+    }
+    .btn-bar{
+      #buttons{
+        a{
+        }
+      }
+    }
+    #clients{
+      ul{
+        .client{
+          .content{
+            .client-phrase{
+            }
+          }
+          .client-details{
+            .photo-wapper{
+            }
+          }
+        }
+      }
+    }
+  }
 }

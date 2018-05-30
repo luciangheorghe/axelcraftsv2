@@ -6,11 +6,9 @@
   padding: 200px 0 150px 0;
   display: flex;
   flex-direction: row;
-  // background: lightgreen;
   .user-details{
     width: 50%;
     height: auto;
-    // background: green;
     padding: 15px 30px 0 40px;
     display: flex;
     flex-direction: column-reverse;
@@ -61,21 +59,12 @@
     padding: 15px 40px 15px 30px;
     width: 50%;
     height: auto;
-    // background: lightblue;
     position: relative;
     #about-title{
       color: $lightblue;
       padding-bottom: 25px;
       text-align: center;
       font-size: 2.2rem;
-      // padding-bottom: 20px;
-      // position: relative;
-      // top: 20%;
-      // left: 50%;
-      // transform: translate(-50%, -50%);
-      // -webkit-transform: translate(-50%, -50%);
-      // -moz-transform: translate(-50%, -50%);
-      // -ms-transform: translate(-50%, -50%);
     }
     .about-text{
       font-size: 1.1rem;
@@ -84,14 +73,6 @@
       text-align: justify;
       color: $lightgrey;
       width: 100%;
-      // position: relative;
-      // top: 50%;
-      // left: 50%;
-      // transform: translate(-50%, -60%);
-      // -webkit-transform: translate(-50%, -60%);
-      // -moz-transform: translate(-50%, -60%);
-      // -ms-transform: translate(-50%, -60%);
-
     }
   }
 }

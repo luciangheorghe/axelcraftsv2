@@ -69,7 +69,7 @@ require = (function (modules, cache, entry) {
 
   // Override the current require with this new one
   return newRequire;
-})({34:[function(require,module,exports) {
+})({35:[function(require,module,exports) {
 var bundleURL = null;
 function getBundleURLCached() {
   if (!bundleURL) {
@@ -100,7 +100,7 @@ function getBaseURL(url) {
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 
-},{}],22:[function(require,module,exports) {
+},{}],23:[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -132,13 +132,13 @@ function reloadCSS() {
 
 module.exports = reloadCSS;
 
-},{"./bundle-url":34}],17:[function(require,module,exports) {
+},{"./bundle-url":35}],17:[function(require,module,exports) {
 
         var reloadCSS = require('_css_loader');
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":22}],18:[function(require,module,exports) {
+},{"_css_loader":23}],18:[function(require,module,exports) {
 
   var slideIndex = 0;
   carousel();
@@ -156,6 +156,18 @@ module.exports = reloadCSS;
   }
 
 },{}],19:[function(require,module,exports) {
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
+},{}],20:[function(require,module,exports) {
 $(document).ready(function(){
     $('#sbmt').click(function(){
       alert('Thank you for getting in touch. We will come back to you as soon as possible.')
@@ -183,7 +195,7 @@ $(document).ready(function(){
 
 });
 
-},{}],20:[function(require,module,exports) {
+},{}],21:[function(require,module,exports) {
 $(function() {
   //----- OPEN
   $('[data-popup-open]').on('click', function(e) {
@@ -199,7 +211,7 @@ $(function() {
   });
 });
 
-},{}],21:[function(require,module,exports) {
+},{}],22:[function(require,module,exports) {
 $(document).ready(function () {
     //rotation speed and timer
     var speed = 5000;
@@ -279,14 +291,14 @@ require("../scss/main.scss");
 
 var sliders = require('./slider.js');
 
-// var menu = require('./menu.js');
+var menu = require('./menu.js');
 
 var submit = require('./submit.js');
 
 var quote = require('./quote.js');
 
 var sliderClient = require('./sliderClient.js');
-},{"../scss/main.scss":17,"./slider.js":18,"./submit.js":19,"./quote.js":20,"./sliderClient.js":21}],0:[function(require,module,exports) {
+},{"../scss/main.scss":17,"./slider.js":18,"./menu.js":19,"./submit.js":20,"./quote.js":21,"./sliderClient.js":22}],0:[function(require,module,exports) {
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
 function Module() {
@@ -304,7 +316,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':36027/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':43247/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
