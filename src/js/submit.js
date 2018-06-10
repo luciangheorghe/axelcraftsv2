@@ -7,5 +7,4 @@ $(document).ready(function() {
     alert('Thank you for sending your quote. We will come back to you as soon as possible.')
   });
 
-  d
 });
