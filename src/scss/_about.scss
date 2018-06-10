@@ -1,23 +1,26 @@
-#about{
+#about {
   font-family: 'Exo', sans-serif;
   margin: 0 auto;
   width: 70%;
   height: auto;
-  padding: 200px 0 150px 0;
+  padding: 200px 0 150px;
   display: flex;
   flex-direction: row;
-  .user-details{
+
+  .user-details {
     width: 50%;
     height: auto;
     padding: 15px 30px 0 40px;
     display: flex;
     flex-direction: column-reverse;
-    .square{
+
+    .square {
       width: 100%;
       height: 300px;
       background: #EBEBEB;
       position: relative;
-      .user-img{
+
+      .user-img {
         position: absolute;
         top: -110px;
         left: 50%;
@@ -25,13 +28,15 @@
         -webkit-transform: translate(-50%, 0);
         -moz-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
-        img{
+
+        img {
           width: 220px;
           height: auto;
           border-radius: 50%;
         }
       }
-      .user-name{
+
+      .user-name {
         text-align: center;
         position: absolute;
         bottom: 80px;
@@ -40,14 +45,16 @@
         -webkit-transform: translate(-50%, 0);
         -moz-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
-        #director-name{
+
+        #director-name {
           font-size: 2.1rem;
           padding-top: 5px;
           padding-bottom: 20px;
           letter-spacing: 1px;
           color: $lightblue;
         }
-        .director-title{
+
+        .director-title {
           font-size: 1.3rem;
           color: $grey;
           letter-spacing: 1px;
@@ -55,18 +62,21 @@
       }
     }
   }
-  .about-description{
+
+  .about-description {
     padding: 15px 40px 15px 30px;
     width: 50%;
     height: auto;
     position: relative;
-    #about-title{
+
+    #about-title {
       color: $lightblue;
       padding-bottom: 25px;
       text-align: center;
       font-size: 2.2rem;
     }
-    .about-text{
+
+    .about-text {
       font-size: 1.1rem;
       letter-spacing: 1.5px;
       line-height: 200%;
@@ -76,40 +86,46 @@
     }
   }
 }
-
 //phone
 @media (max-width: 767px) {
-  #about{
+  #about {
     min-width: 685px;
     width: 100%;
-    padding: 120px 0 50px 0;
-    .user-details{
-      .square{
-        .user-img{
+    padding: 120px 0 50px;
+
+    .user-details {
+      .square {
+        .user-img {
           top: -80px;
-          img{
+
+          img {
             width: 160px;
           }
         }
-        .user-name{
+
+        .user-name {
           bottom: 55px;
-          #director-name{
+
+          #director-name {
             font-size: 1.8rem;
             line-height: 115%;
           }
-          .director-title{
+
+          .director-title {
             font-size: 1rem;
-            padding: 10px 0 0 0;
+            padding: 10px 0 0;
             line-height: 115%;
           }
         }
       }
     }
-    .about-description{
-      #about-title{
+
+    .about-description {
+      #about-title {
         font-size: 1.9rem;
       }
-      .about-text{
+
+      .about-text {
         font-size: 1rem;
         letter-spacing: 0.8px;
         line-height: 170%;
@@ -119,36 +135,43 @@
 }
 //tablet
 @media (min-width: 768px) and (max-width: 991px) {
-  #about{
+  #about {
     width: 100%;
-    padding: 120px 0 50px 0;
-    .user-details{
-      .square{
-        .user-img{
+    padding: 120px 0 50px;
+
+    .user-details {
+      .square {
+        .user-img {
           top: -80px;
-          img{
+
+          img {
             width: 160px;
           }
         }
-        .user-name{
+
+        .user-name {
           bottom: 55px;
-          #director-name{
+
+          #director-name {
             font-size: 1.8rem;
             line-height: 115%;
           }
-          .director-title{
+
+          .director-title {
             font-size: 1rem;
-            padding: 10px 0 0 0;
+            padding: 10px 0 0;
             line-height: 115%;
           }
         }
       }
     }
-    .about-description{
-      #about-title{
+
+    .about-description {
+      #about-title {
         font-size: 1.9rem;
       }
-      .about-text{
+
+      .about-text {
         font-size: 1rem;
         letter-spacing: 0.8px;
         line-height: 170%;
@@ -158,36 +181,43 @@
 }
 //laptop
 @media (min-width: 992px) and (max-width: 1199px) {
-  #about{
+  #about {
     width: 100%;
-    padding: 125px 0 50px 0;
-    .user-details{
-      .square{
-        .user-img{
+    padding: 125px 0 50px;
+
+    .user-details {
+      .square {
+        .user-img {
           top: -85px;
-          img{
+
+          img {
             width: 170px;
           }
         }
-        .user-name{
+
+        .user-name {
           bottom: 45px;
-          #director-name{
+
+          #director-name {
             font-size: 1.8rem;
             line-height: 115%;
           }
-          .director-title{
+
+          .director-title {
             font-size: 1rem;
-            padding: 15px 0 0 0;
+            padding: 15px 0 0;
             line-height: 115%;
           }
         }
       }
     }
-    .about-description{
-      #about-title{
+
+    .about-description {
+      #about-title {
         font-size: 1.9rem;
       }
-      .about-text{
+
+      .about-text {
         font-size: 1rem;
         letter-spacing: 0.5px;
         line-height: 170%;
@@ -196,38 +226,45 @@
   }
 }
 //extra big
-@media (min-width: 1200px) and (max-width: 1580px){
-  #about{
-    padding: 140px 0 50px 0;
+@media (min-width: 1200px) and (max-width: 1580px) {
+  #about {
+    padding: 140px 0 50px;
     width: 90%;
-    .user-details{
-      .square{
-        .user-img{
+
+    .user-details {
+      .square {
+        .user-img {
           top: -100px;
-          img{
+
+          img {
             width: 200px;
           }
         }
-        .user-name{
+
+        .user-name {
           bottom: 45px;
-          #director-name{
+
+          #director-name {
             font-size: 1.8rem;
             line-height: 115%;
             width: 100%;
           }
-          .director-title{
+
+          .director-title {
             font-size: 1rem;
-            padding: 10px 0 0 0;
+            padding: 10px 0 0;
             line-height: 115%;
           }
         }
       }
     }
-    .about-description{
-      #about-title{
+
+    .about-description {
+      #about-title {
         font-size: 1.9rem;
       }
-      .about-text{
+
+      .about-text {
         font-size: 1.2rem;
         letter-spacing: 0.5px;
         line-height: 160%;

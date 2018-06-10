@@ -1,40 +1,47 @@
-#services{
+#services {
   font-family: 'Exo', sans-serif;
   margin: 0 auto;
   width: 70%;
   height: auto;
-  padding: 150px 20px 150px 20px;
+  padding: 150px 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  h2{
+
+  h2 {
     color: $lightblue;
     text-align: center;
     font-size: 2.2rem;
-    padding: 0 0 60px 0;
+    padding: 0 0 60px;
   }
-  #job-description{
+
+  #job-description {
     display: flex;
     flex-direction: row;
-    .service-container{
-      padding: 20px 20px 0px 20px;
-      .fas{
+
+    .service-container {
+      padding: 20px 20px 0;
+
+      .fas {
         font-size: 2.5rem;
         color: $lightblue;
-        padding: 20px 0 20px 0;
+        padding: 20px 0;
       }
-      .far{
+
+      .far {
         font-size: 2.5rem;
         color: $lightblue;
-        padding: 20px 0 20px 0;
+        padding: 20px 0;
       }
-      .service-title{
+
+      .service-title {
         font-size: 1.5rem;
         letter-spacing: 2px;
         padding-top: 30px;
         padding-bottom: 40px;
       }
-      .service-description{
+
+      .service-description {
         color: $lightgrey;
         letter-spacing: 2px;
         line-height: 200%;
@@ -43,30 +50,34 @@
     }
   }
 }
-
-
 //phone
 @media (max-width: 767px) {
-  #services{
-    padding: 50px 20px 50px 20px;
-    h2{
+  #services {
+    padding: 50px 20px;
+
+    h2 {
       font-size: 1.9rem;
-      padding: 0 0 30px 0;
+      padding: 0 0 30px;
     }
-    #job-description{
+
+    #job-description {
       display: flex;
       flex-direction: column;
-      .service-container{
+
+      .service-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .fas{
+
+        .fas {
           font-size: 2.3rem;
         }
-        .far{
+
+        .far {
           font-size: 2.3rem;
         }
-        .service-title{
+
+        .service-title {
           font-size: 1.3rem;
         }
       }
@@ -75,26 +86,32 @@
 }
 //tablet
 @media (min-width: 768px) and (max-width: 991px) {
-  #services{
-    padding: 50px 20px 50px 20px;
-    h2{
+  #services {
+    padding: 50px 20px;
+
+    h2 {
       font-size: 1.9rem;
-      padding: 0 0 30px 0;
+      padding: 0 0 30px;
     }
-    #job-description{
+
+    #job-description {
       display: flex;
       flex-direction: column;
-      .service-container{
+
+      .service-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .fas{
+
+        .fas {
           font-size: 2.3rem;
         }
-        .far{
+
+        .far {
           font-size: 2.3rem;
         }
-        .service-title{
+
+        .service-title {
           font-size: 1.3rem;
         }
       }
@@ -103,26 +120,32 @@
 }
 //laptop
 @media (min-width: 992px) and (max-width: 1199px) {
-  #services{
-    padding: 50px 20px 50px 20px;
-    h2{
+  #services {
+    padding: 50px 20px;
+
+    h2 {
       font-size: 1.9rem;
-      padding: 0 0 30px 0;
+      padding: 0 0 30px;
     }
-    #job-description{
+
+    #job-description {
       display: flex;
       flex-direction: column;
-      .service-container{
+
+      .service-container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .fas{
+
+        .fas {
           font-size: 2.3rem;
         }
-        .far{
+
+        .far {
           font-size: 2.3rem;
         }
-        .service-title{
+
+        .service-title {
           font-size: 1.3rem;
         }
       }
@@ -130,6 +153,4 @@
   }
 }
 //extra big
-@media (min-width: 1200px) and (max-width: 1580px){
-
-}
+@media (min-width: 1200px) and (max-width: 1580px) {}

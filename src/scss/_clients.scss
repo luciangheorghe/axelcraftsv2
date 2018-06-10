@@ -1,23 +1,24 @@
-#clients-opinion{
+#clients-opinion {
   font-family: 'Exo', sans-serif;
   position: relative;
-  width:60%;
-  margin:0 auto;
-  padding: 150px 0 150px 0;
+  width: 60%;
+  margin: 0 auto;
+  padding: 150px 0;
 
-  .title-clients-section{
+  .title-clients-section {
     color: #13293D;
     text-align: center;
     font-size: 2.2rem;
-    padding: 0 0 15px 0;
+    padding: 0 0 15px;
   }
-  .line{
-    margin:0 auto;
+
+  .line {
+    margin: 0 auto;
     width: 100px;
     border-bottom: 2px solid $lightblue;
   }
 
-  .btn-bar{
+  .btn-bar {
     max-width: 346px;
     margin: 0 auto;
     display: block;
@@ -26,8 +27,9 @@
     width: 100%;
 
     #buttons {
-    padding:0 0 5px 0;
-      a{
+      padding: 0 0 5px;
+
+      a {
         text-align: center;
         display: block;
         font-size: 3.5rem;
@@ -43,31 +45,32 @@
     }
   }
 
-  #clients{
+  #clients {
     overflow: hidden;
     position: relative;
     width: 100%;
     height: 300px;
 
-    ul{
+    ul {
       list-style: none;
-      width:100%;
-      height:250px;
+      width: 100%;
+      height: 250px;
       margin: 0;
       padding: 0;
       position: relative;
 
-      .client{
-        width:100%;
-        height:250px;
-        float:left;
+      .client {
+        width: 100%;
+        height: 250px;
+        float: left;
         text-align: center;
         position: relative;
 
-        .content{
+        .content {
           display: table;
           width: 100%;
-          .client-phrase{
+
+          .client-phrase {
             font-weight: 100;
             line-height: 1.5;
             display: table-cell;
@@ -78,32 +81,38 @@
             color: $lightgrey;
           }
         }
-        .client-details{
-          padding: 30px 0 0 0;
+
+        .client-details {
+          padding: 30px 0 0;
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: center;
-          .photo-wrapper{
+
+          .photo-wrapper {
             width: 70px;
             height: 70px;
-            .photo{
+
+            .photo {
               border-radius: 50%;
               width: 100%;
               height: 100%;
               object-fit: cover;
             }
           }
-          .client-info{
+
+          .client-info {
             padding: 0 0 0 20px;
-            .client-name{
+
+            .client-name {
               color: $lightblue;
             }
-            .client-company{
+
+            .client-company {
               font-size: 0.7rem;
               font-style: italic;
               color: $lightgrey;
-              padding: 5px 0 0 0;
+              padding: 5px 0 0;
             }
           }
         }
@@ -111,39 +120,41 @@
     }
   }
 }
-
-
 //phone
 @media (max-width: 767px) {
-  #clients-opinion{
-    padding: 50px 0 50px 0;
-    width:100%;
+  #clients-opinion {
+    padding: 50px 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .title-clients-section{
-      font-size: 1.9rem
+
+    .title-clients-section {
+      font-size: 1.9rem;
     }
-    .btn-bar{
-      #buttons{
-        a{
+
+    .btn-bar {
+      #buttons {
+        a {
           font-size: 2.8rem;
         }
       }
     }
-    #clients{
-      ul{
-        .client{
-          .content{
-            .client-phrase{
+
+    #clients {
+      ul {
+        .client {
+          .content {
+            .client-phrase {
               font-size: 0.9rem;
             }
           }
-          .client-details{
+
+          .client-details {
             padding: 0;
-            .photo-wapper{
-            }
+
+            .photo-wapper {}
           }
         }
       }
@@ -152,35 +163,39 @@
 }
 //tablet
 @media (min-width: 768px) and (max-width: 991px) {
-  #clients-opinion{
-    padding: 50px 0 50px 0;
-    width:100%;
+  #clients-opinion {
+    padding: 50px 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .title-clients-section{
-      font-size: 1.9rem
+
+    .title-clients-section {
+      font-size: 1.9rem;
     }
-    .btn-bar{
-      #buttons{
-        a{
+
+    .btn-bar {
+      #buttons {
+        a {
           font-size: 2.8rem;
         }
       }
     }
-    #clients{
-      ul{
-        .client{
-          .content{
-            .client-phrase{
+
+    #clients {
+      ul {
+        .client {
+          .content {
+            .client-phrase {
               font-size: 0.9rem;
             }
           }
-          .client-details{
+
+          .client-details {
             padding: 0;
-            .photo-wapper{
-            }
+
+            .photo-wapper {}
           }
         }
       }
@@ -189,35 +204,39 @@
 }
 //laptop
 @media (min-width: 992px) and (max-width: 1199px) {
-  #clients-opinion{
-    padding: 50px 0 50px 0;
-    width:100%;
+  #clients-opinion {
+    padding: 50px 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .title-clients-section{
-      font-size: 1.9rem
+
+    .title-clients-section {
+      font-size: 1.9rem;
     }
-    .btn-bar{
-      #buttons{
-        a{
+
+    .btn-bar {
+      #buttons {
+        a {
           font-size: 2.8rem;
         }
       }
     }
-    #clients{
-      ul{
-        .client{
-          .content{
-            .client-phrase{
+
+    #clients {
+      ul {
+        .client {
+          .content {
+            .client-phrase {
               font-size: 0.9rem;
             }
           }
-          .client-details{
+
+          .client-details {
             padding: 0;
-            .photo-wapper{
-            }
+
+            .photo-wapper {}
           }
         }
       }
@@ -225,30 +244,30 @@
   }
 }
 //extra big
-@media (min-width: 1200px) and (max-width: 1580px){
-  #clients-opinion{
+@media (min-width: 1200px) and (max-width: 1580px) {
+  #clients-opinion {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    .title-clients-section{
-    }
-    .btn-bar{
-      #buttons{
-        a{
-        }
+
+    .title-clients-section {}
+
+    .btn-bar {
+      #buttons {
+        a {}
       }
     }
-    #clients{
-      ul{
-        .client{
-          .content{
-            .client-phrase{
-            }
+
+    #clients {
+      ul {
+        .client {
+          .content {
+            .client-phrase {}
           }
-          .client-details{
-            .photo-wapper{
-            }
+
+          .client-details {
+            .photo-wapper {}
           }
         }
       }

@@ -2,11 +2,10 @@
 
 This is a basic presentation website for my brother's business.
 
-- It has been created in Atom IDE & ParcelJS using HTML5, CSS3.
-- Media queries have been used for responsiveness
-- jQuery and ScrollSpy was used to animate the page.
-- Extra fonts have been added from Google Fonts and Font Awesome.
-
+-   It has been created in Atom IDE & ParcelJS using HTML5, CSS3.
+-   Media queries have been used for responsiveness
+-   jQuery was used to animate the page.
+-   Extra fonts have been added from Google Fonts and Font Awesome.
 
 The website has a flat, clean and responsive interface. User interface is easy to understand and straight forward.
 The navigation menu is fixed on the top of the page. All information is divided in separate Sections.

@@ -139,60 +139,43 @@ module.exports = reloadCSS;
         module.hot.accept(reloadCSS);
       
 },{"_css_loader":23}],18:[function(require,module,exports) {
+var slideIndex = 0;
+carousel();
 
-  var slideIndex = 0;
-  carousel();
-
-  function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > x.length) {slideIndex = 1}
-      x[slideIndex-1].style.display = "block";
-      setTimeout(carousel, 10000); // Change image every 10 seconds
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
   }
+  slideIndex++;
+  if (slideIndex > x.length) {
+    slideIndex = 1
+  }
+  x[slideIndex - 1].style.display = "block";
+  setTimeout(carousel, 10000); // Change image every 10 seconds
+}
 
 },{}],19:[function(require,module,exports) {
-
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
+    document.querySelector(this.getAttribute('href')).scrollIntoView({behavior: 'smooth'});
+  });
 });
 
 },{}],20:[function(require,module,exports) {
-$(document).ready(function(){
-    $('#sbmt').click(function(){
-      alert('Thank you for getting in touch. We will come back to you as soon as possible.')
-    });
+$(document).ready(function() {
+  $('#sbmt').click(function() {
+    alert('Thank you for getting in touch. We will come back to you as soon as possible.')
+  });
 
-    $('#sbmt-q').click(function(){
-      alert('Thank you for sending your quote. We will come back to you as soon as possible.')
-    });
+  $('#sbmt-q').click(function() {
+    alert('Thank you for sending your quote. We will come back to you as soon as possible.')
+  });
 
-    // $('#search-btn').on('click',function(){
-    //     $('#search-bar').toggleClass('hidden')
-    // });
-    //
-    // $('#pic1').on('mouseover', function () {
-    //     $('#description1').slideDown('slow');
-    // });
-    //
-    // $('#pic2').on('mouseover', function () {
-    //     $('#description2').slideDown('slow');
-    // });
-    //
-    // $('#pic3').on('mouseover', function () {
-    //     $('#description3').slideDown('slow');
-    // });
-
+  d
 });
 
 },{}],21:[function(require,module,exports) {
@@ -212,76 +195,74 @@ $(function() {
 });
 
 },{}],22:[function(require,module,exports) {
-$(document).ready(function () {
-    //rotation speed and timer
-    var speed = 5000;
+$(document).ready(function() {
+  //rotation speed and timer
+  var speed = 5000;
 
-    var run = setInterval(rotate, speed);
-    var slides = $('.client');
-    var container = $('#clients ul');
-    var elm = container.find(':first-child').prop("tagName");
-    var item_width = container.width();
-    var previous = 'prev'; //id of previous button
-    var next = 'next'; //id of next button
-    slides.width(item_width); //set the slides to the correct pixel width
-    container.parent().width(item_width);
-    container.width(slides.length * item_width); //set the slides container to the correct total width
-    container.find(elm + ':first').before(container.find(elm + ':last'));
-    resetSlides();
+  var run = setInterval(rotate, speed);
+  var slides = $('.client');
+  var container = $('#clients ul');
+  var elm = container.find(':first-child').prop("tagName");
+  var item_width = container.width();
+  var previous = 'prev'; //id of previous button
+  var next = 'next'; //id of next button
+  slides.width(item_width); //set the slides to the correct pixel width
+  container.parent().width(item_width);
+  container.width(slides.length * item_width); //set the slides container to the correct total width
+  container.find(elm + ':first').before(container.find(elm + ':last'));
+  resetSlides();
 
+  //if user clicked on prev button
 
-    //if user clicked on prev button
+  $('#buttons a').click(function(e) {
+    //slide the item
 
-    $('#buttons a').click(function (e) {
-        //slide the item
-
-        if (container.is(':animated')) {
-            return false;
-        }
-        if (e.target.id == previous) {
-            container.stop().animate({
-                'left': 0
-            }, 1500, function () {
-                container.find(elm + ':first').before(container.find(elm + ':last'));
-                resetSlides();
-            });
-        }
-
-        if (e.target.id == next) {
-            container.stop().animate({
-                'left': item_width * -2
-            }, 1500, function () {
-                container.find(elm + ':last').after(container.find(elm + ':first'));
-                resetSlides();
-            });
-        }
-
-        //cancel the link behavior
-        return false;
-
-    });
-
-    //if mouse hover, pause the auto rotation, otherwise rotate it
-    container.parent().mouseenter(function () {
-        clearInterval(run);
-    }).mouseleave(function () {
-        run = setInterval(rotate, speed);
-    });
-
-
-    function resetSlides() {
-        //and adjust the container so current is in the frame
-        container.css({
-            'left': -1 * item_width
-        });
+    if (container.is(':animated')) {
+      return false;
     }
+    if (e.target.id == previous) {
+      container.stop().animate({
+        'left': 0
+      }, 1500, function() {
+        container.find(elm + ':first').before(container.find(elm + ':last'));
+        resetSlides();
+      });
+    }
+
+    if (e.target.id == next) {
+      container.stop().animate({
+        'left': item_width * -2
+      }, 1500, function() {
+        container.find(elm + ':last').after(container.find(elm + ':first'));
+        resetSlides();
+      });
+    }
+
+    //cancel the link behavior
+    return false;
+
+  });
+
+  //if mouse hover, pause the auto rotation, otherwise rotate it
+  container.parent().mouseenter(function() {
+    clearInterval(run);
+  }).mouseleave(function() {
+    run = setInterval(rotate, speed);
+  });
+
+  function resetSlides() {
+    //and adjust the container so current is in the frame
+    container.css({
+      'left': -1 * item_width
+    });
+  }
 
 });
 //a simple function to click next link
 //a timer will call this function, and the rotation will begin
 
 function rotate() {
-    $('#next').click();
+  $('#next').click();
 }
 
 },{}],10:[function(require,module,exports) {
@@ -316,7 +297,7 @@ function Module() {
 module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
-  var ws = new WebSocket('ws://' + window.location.hostname + ':43247/');
+  var ws = new WebSocket('ws://' + window.location.hostname + ':33653/');
   ws.onmessage = function(event) {
     var data = JSON.parse(event.data);
 
