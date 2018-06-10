@@ -1,0 +1,1 @@
+{"dependencies":[],"generated":{"js":"var e=0;l();function l(){var t,s=document.getElementsByClassName(\"mySlides\");for(t=0;t<s.length;t++)s[t].style.display=\"none\";++e>s.length&&(e=1),s[e-1].style.display=\"block\",setTimeout(l,1e4)}"},"hash":"ab64e80405abd0abd5a542d81aa0e8ed"}

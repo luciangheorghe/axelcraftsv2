@@ -4,10 +4,10 @@ const path = require('path')
 //Create the express app
 const app = express()
 //create middleware to handle the serving the app
-app.use("/", serveStatic(path.join(__dirname, '/build')))
+app.use("/", serveStatic(path.join(__dirname, '/public')))
 //serve index by default
 app.get("/", function(req, res) {
-  res.sendFile(__dirname + '/build/index.html')
+  res.sendFile(__dirname + '/public/index.html')
 })
 //create default port to serve the app on
 const port = process.env.PORT || 5000
