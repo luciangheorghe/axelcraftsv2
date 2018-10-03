@@ -23,3 +23,7 @@ ScrollSpy animates the website and makes it "scroll-down" to the section you cli
 "Contact" section has a form that can be used to send an email to the website admins and the contact address.
 
 The footer has social media links.
+
+Note:
+All the snippets code that was used as inspiration, their authors were mentioned in the specific files.
+The photos from top slider were taken from unsplash.com 
